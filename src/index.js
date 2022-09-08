@@ -58,9 +58,7 @@ const ImagesGallery = () => {
       <li>
           <Link to="/About">تماس با ما</Link>
         </li>
-      <li>
-          <Link to="/Bio"> بیوگرافی</Link>
-        </li>
+    
   
         <li>
           <Link to="/third">آثار  نمایشگاهی دوم</Link>
