@@ -59,12 +59,11 @@ const ImagesGallery = () => {
           <Link to="/About">تماس با ما</Link>
         </li>
     
-  
         <li>
-          <Link to="/third">آثار  نمایشگاهی دوم</Link>
+          <Link to="/third">آثار نمایشگاه دوم</Link>
         </li>
         <li>
-          <Link to="/second">آثار  نمایشگاهی اول</Link>
+          <Link to="/second">آثار نمایشگاه اول</Link>
         </li>
         <li>
           <Link to="/">خانه</Link>
