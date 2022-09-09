@@ -75,6 +75,7 @@ const ImagesGallery = () => {
     {/* A <Switch> looks through its children <Route>s and
         renders the first one that matches the current URL. */}
   <Routes >
+  <Route index element={<First />} />
   <Route path="/first" element={<First />} />
   <Route path="/third" element={<Third />} />
   <Route path="/second" element={<Second />} />
