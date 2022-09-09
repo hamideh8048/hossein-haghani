@@ -13,6 +13,7 @@ import Bio from './pages/bio'
 import About from './pages/About'
 import Third from './pages/third'
 import Second from "./pages/second";
+import First from "./pages/first";
 const PREFIX_URL = '../static/';
 const ImagesGallery = () => {
   const [images, setImages] = React.useState(null);
@@ -66,7 +67,7 @@ const ImagesGallery = () => {
           <Link to="/second">آثار نمایشگاه اول</Link>
         </li>
         <li>
-          <Link to="/">خانه</Link>
+          <Link to="/first">خانه</Link>
         </li>
       </ul>
     </nav>
@@ -74,7 +75,7 @@ const ImagesGallery = () => {
     {/* A <Switch> looks through its children <Route>s and
         renders the first one that matches the current URL. */}
   <Routes >
-
+  <Route path="/first" element={<First />} />
   <Route path="/third" element={<Third />} />
   <Route path="/second" element={<Second />} />
       <Route path="/About" element={<About />} /> 
@@ -84,10 +85,8 @@ const ImagesGallery = () => {
   </div>
 </Router>
 
-
  </div>
  : null;
-
 
 };
 
