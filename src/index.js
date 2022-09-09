@@ -60,7 +60,8 @@ const ImagesGallery = () => {
       <li>
           <Link to="/About">تماس با ما</Link>
         </li>
-  
+    
+   
         <li>
           <Link to="/second">آثار نمایشگاه اول</Link>
         </li>
@@ -74,16 +75,16 @@ const ImagesGallery = () => {
         renders the first one that matches the current URL. */}
   <Routes >
 
-  {/* <Route path="/third" element={<Third />} /> */}
+  <Route path="/third" element={<Third />} />
   <Route path="/second" element={<Second />} />
       <Route path="/About" element={<About />} /> 
       <Route path="/Bio" element={<Bio />} /> 
     </Routes > 
-    <img src="static/4.jpg" alt="Paris" class="center"></img>
+
   </div>
 </Router>
 
- < ImageGallery items={images} /> 
+
  </div>
  : null;
 
