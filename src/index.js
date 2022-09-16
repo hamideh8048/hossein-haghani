@@ -5,7 +5,6 @@ import i18n from './i18n/i18n.js';
 import ReactDOM from "react-dom";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
-
 import "./styles/style.css";
 import {BrowserRouter as Router,
   Routes ,
@@ -17,7 +16,7 @@ import About from './pages/About'
 import Third from './pages/third'
 import Second from "./pages/second";
 import First from "./pages/first";
-
+import ImageSelectList from "./pages/forth";
 const PREFIX_URL = '../static/';
 const ImagesGallery = () => {
   const [images, setImages] = React.useState(null);
@@ -91,7 +90,9 @@ const ImagesGallery = () => {
       <li>
           <Link to="/About">{t('ContactUs')}</Link>
         </li>
-    
+        <li>
+          <Link to="/imageList">{t('NFT')}</Link>
+        </li>
    
         <li>
           <Link to="/second">{t('FirstExhibition')}</Link>
@@ -112,6 +113,7 @@ const ImagesGallery = () => {
   <Route path="/second" element={<Second />} />
       <Route path="/About" element={<About />} /> 
       <Route path="/Bio" element={<Bio />} /> 
+      <Route path="/imageList" element={<ImageSelectList />} /> 
     </Routes > 
     </Suspense>
   </div>
