@@ -55,9 +55,9 @@ class ProductList extends React.Component {
       content: {
         position: "absolute",
         top: "8rem",
-        left: "15rem",
-        right: "15rem",
-        bottom: "12rem",
+        left: "20rem",
+        right: "20rem",
+        bottom: "7rem",
         backgroundColor: "paleturquoise",
         borderRadius: "1rem",
         padding: "1.5rem"
@@ -77,7 +77,7 @@ class ProductList extends React.Component {
         closeTimeoutMS={500}>
    
 <div className="detail">
-      <button onClick={this.closeModal}>close</button>
+     <img src="./static/close.png" alt="my image" className="close" onClick={this.closeModal} />
       <div>
       <img  src={this.state.url} alt="caligraphy"  class="centerdetail"></img></div>
       <div className="child">{this.state.name}</div> 

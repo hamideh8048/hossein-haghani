@@ -38,7 +38,7 @@ body {
   display: block;
   margin-left:0;
  margin-right: auto; 
- width: 350px;  
+ width: 250px;  
  height: auto;  
 }
 .customStyles {
@@ -230,5 +230,11 @@ direction: rtl;
   float: right;
 margin-top: 20px;
   width: 350px;
-
+height: auto;
+}
+.close{
+margin: 0ch;
+  height: 35px;
+    width: 35px;
+  
 }
