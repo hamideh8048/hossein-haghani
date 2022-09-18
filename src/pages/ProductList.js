@@ -16,6 +16,7 @@ class ProductList extends React.Component {
       productDataList: [],
       modalIsOpen: false,
       name:'',
+      size:'',
       isOpen: false
     };
   }
@@ -25,17 +26,15 @@ class ProductList extends React.Component {
     this.setState({
       productDataList: pageOfItems,
       modalIsOpen: false,
-      item:[]
+   
     });
   };
   
-  // openModal = () => {
-  //   this.setState({ modalIsOpen: true });
-  //   this.setState({ name: 'a'});
-  // };
+ 
   openModal(someValue) { // called repeatedly
     this.setState({ modalIsOpen: true });
-    this.setState({ name: someValue});
+    this.setState({ name: someValue.name});
+    this.setState({ size: someValue.size});
   }
   closeModal = () => {
     this.setState({ modalIsOpen: false ,
@@ -53,10 +52,10 @@ class ProductList extends React.Component {
       },
       content: {
         position: "absolute",
-        top: "5rem",
-        left: "5rem",
-        right: "5rem",
-        bottom: "5rem",
+        top: "10rem",
+        left: "15rem",
+        right: "15rem",
+        bottom: "10rem",
         backgroundColor: "paleturquoise",
         borderRadius: "1rem",
         padding: "1.5rem"
@@ -71,14 +70,18 @@ class ProductList extends React.Component {
         <div>
         <img  src={item.url} alt="caligraphy"  class="center"></img>
     
-        <a  className="read-more-link" onClick={()=>this.openModal(item.name)}><h3>{'اطلاعات بیشتر'}</h3></a>
+        <a  className="read-more-link" onClick={()=>this.openModal(item)}><h3>{'اطلاعات بیشتر'}</h3></a>
     <Modal   isOpen={this.state.modalIsOpen}  onRequestClose={this.closeModal} style={modalStyle}  overlayClassName="myoverlay"
         closeTimeoutMS={500}>
    
-
+<div className="detail">
       <button onClick={this.closeModal}>close</button>
-      <div>{this.state.name}</div>
+      <div>{this.state.name}</div> 
+      
+      <div>{this.state.size}</div> 
+        </div>
     </Modal>
+ 
 
 </div>
       )

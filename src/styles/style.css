@@ -216,3 +216,6 @@ direction:rtl;
 .ReactModal__Overlay--before-close {
   opacity: 0;
 }
+.detail  {
+direction: rtl;
+}
