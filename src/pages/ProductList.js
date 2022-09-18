@@ -53,15 +53,29 @@ class ProductList extends React.Component {
         backgroundColor: "rgba(0,0,0,0.85)"
       },
       content: {
-        position: "absolute",
-        top: "8rem",
-        left: "20rem",
-        right: "20rem",
-        bottom: "6rem",
-        backgroundColor: "paleturquoise",
-        borderRadius: "1rem",
-        padding: "1.5rem"
+        position: 'absolute',
+        top: '90px',
+        left: '320px',
+        right: '320px',
+        bottom: '90px',
+        border: '1px solid #ccc',
+        background: '#fff',
+        overflow: 'auto',
+        WebkitOverflowScrolling: 'touch',
+        borderRadius: '4px',
+        outline: 'none',
+        padding: '20px'
       }
+      // content: {
+      //   position: "absolute",
+      //   top: "8rem",
+      //   left: "20rem",
+      //   right: "20rem",
+      //   bottom: "6rem",
+      //   backgroundColor: "paleturquoise",
+      //   borderRadius: "1rem",
+      //   padding: "1.5rem"
+      // }
     };
   
     Modal.setAppElement("#root");
