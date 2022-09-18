@@ -54,16 +54,16 @@ class ProductList extends React.Component {
       },
       content: {
         position: "absolute",
-        top: "5rem",
+        top: "8rem",
         left: "15rem",
         right: "15rem",
-        bottom: "5rem",
+        bottom: "12rem",
         backgroundColor: "paleturquoise",
         borderRadius: "1rem",
         padding: "1.5rem"
       }
     };
-    
+  
     Modal.setAppElement("#root");
     return (
       <div>
@@ -78,10 +78,12 @@ class ProductList extends React.Component {
    
 <div className="detail">
       <button onClick={this.closeModal}>close</button>
-      <div>{this.state.name}</div> 
+      <div>
+      <img  src={this.state.url} alt="caligraphy"  class="centerdetail"></img></div>
+      <div className="child">{this.state.name}</div> 
       <br></br>
-      <img  src={this.state.url} alt="caligraphy"  class="centerdetail"></img>
-      <br></br>
+    
+      <br></br><br></br>
       <div>ابعاد:  {this.state.size}</div> 
         </div>
     </Modal>

@@ -34,6 +34,7 @@ body {
  height: auto;  
 }
 .centerdetail {
+  float: left;
   display: block;
   margin-left:0;
  margin-right: auto; 
@@ -224,4 +225,10 @@ direction:rtl;
 }
 .detail  {
 direction: rtl;
+}
+.child {
+  float: right;
+margin-top: 20px;
+  width: 350px;
+
 }
