@@ -17,6 +17,7 @@ class ProductList extends React.Component {
       modalIsOpen: false,
       name:'',
       size:'',
+      url:'',
       isOpen: false
     };
   }
@@ -35,6 +36,7 @@ class ProductList extends React.Component {
     this.setState({ modalIsOpen: true });
     this.setState({ name: someValue.name});
     this.setState({ size: someValue.size});
+    this.setState({ url: someValue.url});
   }
   closeModal = () => {
     this.setState({ modalIsOpen: false ,
@@ -52,10 +54,10 @@ class ProductList extends React.Component {
       },
       content: {
         position: "absolute",
-        top: "10rem",
+        top: "5rem",
         left: "15rem",
         right: "15rem",
-        bottom: "10rem",
+        bottom: "5rem",
         backgroundColor: "paleturquoise",
         borderRadius: "1rem",
         padding: "1.5rem"
@@ -77,8 +79,10 @@ class ProductList extends React.Component {
 <div className="detail">
       <button onClick={this.closeModal}>close</button>
       <div>{this.state.name}</div> 
-      
-      <div>{this.state.size}</div> 
+      <br></br>
+      <img  src={this.state.url} alt="caligraphy"  class="centerdetail"></img>
+      <br></br>
+      <div>ابعاد:  {this.state.size}</div> 
         </div>
     </Modal>
  
