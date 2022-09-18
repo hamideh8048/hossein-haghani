@@ -57,7 +57,7 @@ class ProductList extends React.Component {
         top: "8rem",
         left: "20rem",
         right: "20rem",
-        bottom: "7rem",
+        bottom: "6rem",
         backgroundColor: "paleturquoise",
         borderRadius: "1rem",
         padding: "1.5rem"

@@ -38,37 +38,39 @@ export const productList = [
   {
     id: 7,
     url:"static/7.jpg",
-    name: "img7"
+    name: "زیباترین حرفت را بگو شکنجه ی پنهان سکوتت را آشکاره کن "
     ,size:"120*80"
   },
   {
     id: 8,
     url:"static/8.jpg",
-    name: "img8"
+    name: "در بلا هم می‌چشم لذات او. مات اویم مات اویم مات او"
     ,size:"120*80"
   },
   {
     id: 9,
     url:"static/9.jpg",
-    name: "img9"
+    name: "آب را گل نکنیم  روی زیبا دو برابر شده است"
+
+    
     ,size:"120*80"
   },
   {
     id: 10,
     url:"static/10.jpg",
-    name: "img10"
+    name: "جانا حدیث حسنت در داستان نگنجد"
     ,size:"120*80"
   },
   {
     id: 11,
     url:"static/11.jpg",
-    name: "img11"
+    name: "راه دیگری ندارد شب مگر از چشم‌های تو بگذرد."
     ,size:"120*80"
   },
   {
     id: 12,
     url:"static/12.jpg",
-    name: "img12"
+    name: "بلبل ز شاخ سرو به گلبانگ پهلوی... می‌خواند دوش درس مقامات معنوی."
     ,size:"120*80"
   },
   ];
